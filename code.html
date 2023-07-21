@@ -28,16 +28,15 @@
             </section>
             <section class="code-content default-padding">
                 <div class="content-wrap">
-                    <h1>Two Sum</h1>
+                    <h2>Two Sum</h2>
                     <p>The prompt for this problem is to find and return a pair of two numbers in an array that add up to the target number.</p>
-                    <p>Enter a list of numbers, only separated by commas:</p>
+                    <p>In this case, please enter your list separated by commas.</p>
                     <fieldset>
-                        <input id="two-sum-array" type="text" placeholder="Enter Here..." />
-                        <p>Enter the target number here:</p>
-                        <input id="two-sum-target" type="text" placeholder="Enter here..." />
+                        <input id="two-sum-array" type="text" placeholder="Enter list..." />
+                        <input id="two-sum-target" type="text" placeholder="Enter target..." />
                         <br />
-                        <button action="submit" onclick="executeTwoSum()">Calculate</button>
-                        <p id="two-sum-result"></p>
+                        <button onclick="executeTwoSum()">Calculate</button>
+                        <p id="two-sum-result" class="result"></p>
                     </fieldset>
                 </div>
             </section>
