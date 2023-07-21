@@ -66,8 +66,22 @@ button {
 .small-text {
     font-size: 0.875rem !important;
 }
+.wrap section .content-wrap {
+    margin: 0 auto;
+    max-width: 500px;
+}
+.italic {
+    font-style: italic;
+}
 .secondary-bg {
     background: var(--secondary-color);
+}
+.snippet {
+    font-family: 'Courier New', Courier, monospace !important;
+    background: var(--secondary-color);
+}
+.indent {
+    padding: 0rem 1rem;
 }
 /* SITEWIDE STYLES */
 /* Header Content */
@@ -99,9 +113,9 @@ button {
 .hero.default-padding {
     padding-bottom: 0rem;
 }
-.hero .content-wrap {
+.hero > .content-wrap {
     margin: 0 auto;
-    max-width: 400px;
+    max-width: 400px !important;
 }
 .hero p {
     font-size: 3rem;
@@ -131,10 +145,6 @@ footer p.default-padding {
 .home-content.default-padding {
     padding-top: 0rem;
 }
-.home-content .content-wrap {
-    margin: 0 auto;
-    max-width: 400px;
-}
 .home-content * {
     margin-bottom: 1rem;
 }
@@ -148,10 +158,6 @@ footer p.default-padding {
 .code-content h2 {
     text-align: center;
 }
-.code-content .content-wrap {
-    margin: 0 auto;
-    max-width: 500px;
-}
 .code-content .content-wrap * {
     margin-bottom: 1rem;
 }
@@ -162,6 +168,9 @@ footer p.default-padding {
 @media only screen and (min-width: 768px) {
     /* GENERAL STYLES */
     /* UTILITY STYLES */
+    .wrap section .content-wrap {
+        max-width: 700px;
+    }
     /* SITEWIDE STYLES */
     /* Header Content */
     .header-nav ul {
