@@ -17,7 +17,7 @@ function executeTwoSum() {
     let twoSumTarget = parseInt(document.getElementById("two-sum-target").value);
 
     if (twoSum(newArray, twoSumTarget) != undefined) {
-        twoSumResult.textContent = twoSum(newArray, twoSumTarget) + " are the two numbers that add up to " + twoSumTarget;
+        twoSumResult.textContent = twoSum(newArray, twoSumTarget) + " are the two numbers in your list that add up to your target of " + twoSumTarget;
     } else {
         twoSumResult.textContent = "The array or target you entered may be invalid.";
     }
