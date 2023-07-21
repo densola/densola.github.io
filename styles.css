@@ -1,17 +1,20 @@
 /* GENERAL STYLES */
 :root {
+    --primary-color: #d7d1ec;
+    --secondary-color: #533ca769;
+    --primary-text-color: #19025a;
 }
 
 * {
     box-sizing: border-box;
-    color: var(--text-color);
+    color: var(--primary-text-color);
     font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background: var(--main-color);
+    background: var(--primary-color);
 }
 
 a:link,
@@ -44,21 +47,36 @@ h3 {
 }
 
 .default-padding {
-    padding: 1.5rem
+    padding: 1.5rem;
 }
 
 .small-text {
-    font-size: .875rem !important;
+    font-size: 0.875rem !important;
+}
+
+.secondary-bg {
+    background: var(--secondary-color);
 }
 
 /* SITEWIDE STYLES */
 /* Header Content */
+.header-nav {
+    position: fixed;
+    width: 100%;
+}
+
+.header-nav.default-padding {
+    padding: 1rem;
+}
+
 .header-nav ul {
-    display: flex;
+    backdrop-filter: blur(25px);
+    border-radius: 50px;
+    width: 500px;
     flex-wrap: wrap;
-    gap: 30px;
-    justify-content: center;
+    gap: 1.75rem;
     list-style-type: none;
+    padding: 1rem 0rem;
 }
 
 .header-nav > ul > li > a {
@@ -66,6 +84,19 @@ h3 {
 }
 
 /* Main Content */
+.hero {
+    padding-top: 6rem;
+}
+
+.hero.default-padding {
+    padding-bottom: 0rem;
+}
+
+.hero .content-wrap {
+    margin: 0 auto;
+    max-width: 400px;
+}
+
 .hero p {
     font-size: 3rem;
 }
@@ -75,16 +106,35 @@ h3 {
 }
 
 /* Footer Content */
-footer {
+footer.default-padding {
+    padding: 1rem;
+}
+
+footer p {
+    border-radius: 50px;
     text-align: center;
-    width: 100%;
-    padding: 20px;
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+footer p.default-padding {
+    padding: 1rem 0rem;
 }
 
 /* PAGE SPECIFIC STYLES */
 /* index.html */
 .home-content {
     text-align: center;
+}
+
+.home-content.default-padding {
+    padding-top: 0rem;
+}
+
+.home-content .content-wrap {
+    max-width: 400px;
+    margin: 0 auto;
 }
 
 .home-content * {
@@ -99,14 +149,35 @@ footer {
     margin: 2rem 0rem 1.5rem;
 }
 
-.home-content:last-child {
-    margin-bottom: 2rem;
-}
-
 /* code.html */
 
 /* ===TABLET VERSION=== */
 @media only screen and (min-width: 768px) {
+    /* GENERAL STYLES */
+
+    /* UTILITY STYLES */
+    /* SITEWIDE STYLES */
+    /* Header Content */
+    .header-nav ul {
+        backdrop-filter: initial;
+        width: 100%;
+        flex-wrap: wrap;
+        padding: 0rem;
+        background: inherit;
+    }
+
+    .header-nav > ul > li {
+        text-decoration: none;
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        background-color: #00000043;
+    }
+
+    nav.small-text {
+        font-size: initial;
+    }
+    /* UTILITY STYLES */
+    /* PAGE SPECIFIC STYLES */
 }
 
 /* ===DESKTOP VERSION=== */
