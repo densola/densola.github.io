@@ -1,9 +1,9 @@
 /* GENERAL STYLES */
 :root {
-    --contrast-color: #e53e54;
-    --primary-color: #1b1d31;
-    --primary-text-color: #edeff5;
-    --secondary-color: #e53e541f;
+    --contrast-color: #e95367;
+    --primary-color: #232539;
+    --primary-text-color: #e6e8ee;
+    --secondary-color: #e953671f;
 }
 * {
     box-sizing: border-box;
