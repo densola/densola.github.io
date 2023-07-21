@@ -14,6 +14,10 @@
 }
 body {
     background: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
 }
 a:link,
 a:active,
@@ -85,8 +89,8 @@ button {
     width: 500px;
 }
 .header-nav > ul > li > a {
-    text-decoration: none;
     color: var(--primary-text-color);
+    text-decoration: none;
 }
 /* Main Content */
 .hero {
@@ -145,8 +149,8 @@ footer p.default-padding {
     text-align: center;
 }
 .code-content .content-wrap {
-    max-width: 500px;
     margin: 0 auto;
+    max-width: 500px;
 }
 .code-content .content-wrap * {
     margin-bottom: 1rem;
