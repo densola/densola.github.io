@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <div class="content-wrap">
+        <div class="wrap">
             <header>
                 <nav class="default-flex default-padding small-text header-nav">
                     <ul class="secondary-bg default-flex" id="header-nav-list">
@@ -30,8 +30,28 @@
                 <section class="code-content default-padding">
                     <div class="content-wrap">
                         <h2>Two Sum</h2>
-                        <p>The prompt for this problem is to find and return a pair of two numbers in an array that add up to the target number.</p>
-                        <p>In this case, please enter your list separated by commas.</p>
+                        <p>The prompt for this problem is to find and return the first pair of two numbers in an array that add up to the target number.</p>
+                        <p>Here is the code:</p>
+                        <p class="default-padding snippet">
+                            for (let i = 0; i < nums.length; i++) {
+
+                            <br />
+                            <span class="indent"></span>for (let j = i + 1; j < l; j++) {
+
+                            <br />
+                            <span class="indent"></span><span class="indent"></span>if (nums[i] + nums[j] === target) {
+
+                            <br />
+                            <span class="indent"></span><span class="indent"></span><span class="indent"></span>return [nums[i] + " and " + nums[j]];<br />
+                            <span class="indent"></span><span class="indent"></span> }<br />
+                            <span class="indent"></span>
+                            }<br />
+                            }
+                        </p>
+                        <p class="small-text italic">I still need to work on finding out how to make code previews work...</p>
+                        <p>My approach involved two layers of iteration with a <span class="snippet">for</span> loop. The first layer, indicated by the letter <span class="snippet">i</span> in the loop, executes a <span class="snippet">for</span> loop at each iteration. The second layer, indicated by the letter <span class="snippet">j</span>, executes a check on whether those two numbers add up to the target.</p>
+                        <p class="italic">This approach has a bug where it counts a space as 0.</p>
+                        <p><span style="color: var(--contrast-color)">TLDR;</span> Entering a list of numbers separated by commas should give you the first two numbers that add up to your target.</p>
                         <fieldset>
                             <input id="two-sum-array" type="text" placeholder="Enter list..." />
                             <input id="two-sum-target" type="text" placeholder="Enter target..." />
@@ -43,11 +63,9 @@
                 </section>
             </main>
         </div>
-
         <footer class="default-padding">
             <p class="secondary-bg default-flex default-padding">Made by Denise.</p>
         </footer>
-
         <script src="code.js"></script>
         <script src="events.js"></script>
     </body>
