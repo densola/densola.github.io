@@ -83,6 +83,9 @@ button {
 .indent {
     padding: 0rem 1rem;
 }
+.primary-content {
+    padding-top: 0rem !important;
+}
 /* SITEWIDE STYLES */
 /* Header Content */
 .header-nav {
@@ -141,9 +144,6 @@ footer p.default-padding {
 /* index.html */
 .home-content {
     text-align: center;
-}
-.home-content.default-padding {
-    padding-top: 0rem;
 }
 .home-content * {
     margin-bottom: 1rem;
