@@ -1,9 +1,9 @@
 /* GENERAL STYLES */
 :root {
-    --contrast-color: #e95367;
-    --primary-color: #232539;
-    --primary-text-color: #e6e8ee;
-    --secondary-color: #e953671f;
+    --contrast-color: #000000;
+    --primary-color: #000000;
+    --primary-text-color: #000000;
+    --secondary-color: #00000030;
 }
 * {
     box-sizing: border-box;
@@ -13,11 +13,9 @@
     padding: 0;
 }
 body {
-    background: var(--primary-color);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 100vh;
 }
 a:link,
 a:active,
