@@ -1,7 +1,7 @@
 :root {
     --gradient-duration: 3s;
-    --gradient-color-1: #ffa2dd;
-    --gradient-color-2: #af9eff;
+    --gradient-color-1: #ffe0f9;
+    --gradient-color-2: #c1c1ff;
 }
 
 #gradient {
