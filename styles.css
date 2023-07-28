@@ -1,9 +1,10 @@
 /* GENERAL STYLES */
 :root {
-    --contrast-color: #000000;
+    --contrast-color: #7a74e0;
     --primary-color: #000000;
-    --primary-text-color: #000000;
-    --secondary-color: #00000030;
+    --primary-text-color: #423e90;
+    --light-text-color: #ffffff;
+    --secondary-color: #ffffff4d;
 }
 
 * {
@@ -61,6 +62,7 @@ button {
     border: 0px;
     border-radius: 25px;
     padding: 0.5rem 1.5rem;
+    color: var(--light-text-color)
 }
 
 /* UTILITY STYLES */
