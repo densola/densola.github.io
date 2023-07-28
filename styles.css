@@ -126,7 +126,7 @@ button {
     width: 500px;
 }
 
-.header-nav>ul>li>a {
+.header-nav > ul > li > a {
     color: var(--primary-text-color);
     text-decoration: none;
 }
@@ -140,7 +140,7 @@ button {
     padding-bottom: 0rem;
 }
 
-.hero>.content-wrap {
+.hero > .content-wrap {
     margin: 0 auto;
     max-width: 400px !important;
 }
@@ -220,7 +220,7 @@ footer p.default-padding {
         width: 100%;
     }
 
-    .header-nav>ul>li {
+    .header-nav > ul > li {
         -webkit-backdrop-filter: blur(25px);
         backdrop-filter: blur(25px);
         background-color: var(--secondary-color);
