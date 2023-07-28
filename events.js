@@ -7,4 +7,12 @@ function redirectToLink() {
         });
     }
 }
-redirectToLink()
+
+function stretchGradientHeight() {
+    const gradient = document.getElementById("gradient");
+    const bodyHeight = document.body.clientHeight.toString() + "px";
+    document.documentElement.style.setProperty("--height", bodyHeight);
+}
+
+redirectToLink();
+stretchGradientHeight();

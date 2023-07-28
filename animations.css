@@ -2,6 +2,7 @@
     --gradient-duration: 3s;
     --gradient-color-1: #ffe0f9;
     --gradient-color-2: #c1c1ff;
+    --height: 0px;
 }
 
 #gradient {
@@ -19,6 +20,7 @@
     right: 0;
     top: 0;
     z-index: -100;
+    height: var(--height);
 }
 
 #gradient:before {
