@@ -7,4 +7,15 @@ function redirectToLink() {
         });
     }
 }
-redirectToLink()
+
+function stretchGradientHeight() {
+    let bodyHeight = document.body.clientHeight.toString() + "px";
+    document.documentElement.style.setProperty("--height", bodyHeight);
+    window.addEventListener("resize", () => {
+        bodyHeight = document.body.clientHeight.toString() + "px";
+        document.documentElement.style.setProperty("--height", bodyHeight);
+    });
+}
+
+redirectToLink();
+stretchGradientHeight();
