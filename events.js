@@ -9,9 +9,12 @@ function redirectToLink() {
 }
 
 function stretchGradientHeight() {
-    const gradient = document.getElementById("gradient");
-    const bodyHeight = document.body.clientHeight.toString() + "px";
+    let bodyHeight = document.body.clientHeight.toString() + "px";
     document.documentElement.style.setProperty("--height", bodyHeight);
+    window.addEventListener("resize", () => {
+        bodyHeight = document.body.clientHeight.toString() + "px";
+        document.documentElement.style.setProperty("--height", bodyHeight);
+    });
 }
 
 redirectToLink();
