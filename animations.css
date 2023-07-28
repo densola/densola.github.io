@@ -3,10 +3,12 @@
     --gradient-color-1: #ffa2dd;
     --gradient-color-2: #af9eff;
 }
+
 #gradient {
     background: none;
     opacity: 1;
 }
+
 #gradient:after,
 #gradient:before {
     bottom: 0;
@@ -18,18 +20,22 @@
     top: 0;
     z-index: -100;
 }
+
 #gradient:before {
     animation: opacity-animation var(--gradient-duration) ease-in-out 0s infinite alternate;
     background: linear-gradient(90deg, var(--gradient-color-2) 0%, var(--gradient-color-1) 100%);
 }
+
 #gradient:after {
     animation: opacity-animation var(--gradient-duration) ease-in-out calc(-1 * var(--gradient-duration)) infinite alternate;
     background: linear-gradient(90deg, var(--gradient-color-1) 0%, var(--gradient-color-2) 100%);
 }
+
 @keyframes opacity-animation {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
