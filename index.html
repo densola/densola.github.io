@@ -1,54 +1,195 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
     <head>
-        <meta charset="UTF-8" />
+        <meta charset="utf-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>DS - Project Directory</title>
-        <link rel="stylesheet" href="css/styles.css" />
-        <link rel="stylesheet" href="css/animations.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>DS Projects</title>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;800&display=swap"
+            rel="stylesheet"
+        />
+        <script
+            src="https://kit.fontawesome.com/15181efa86.js"
+            crossorigin="anonymous"
+        ></script>
+        <link rel="stylesheet" href="./css/bulma.css" />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./css/hello-parallax.css"
+        />
+        <link rel="stylesheet" type="text/css" href="./css/animations.css" />
     </head>
-    <body id="gradient">
-        <div class="wrap">
-            <header>
-                <nav class="default-flex default-padding small-text header-nav">
-                    <ul class="secondary-bg default-flex" id="header-nav-list">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="code.html">Code</a></li>
-                    </ul>
-                </nav>
-            </header>
-            <main>
-                <section class="hero default-padding">
-                    <div class="content-wrap">
-                        <h1>Greetings.</h1>
-                        <p>Welcome to my site.</p>
-                        <p class="default-padding small-text">Made on 02/26/2023</p>
-                    </div>
-                </section>
-                <section class="primary-content home-content default-padding">
-                    <div class="content-wrap">
-                        <h2>Overview</h2>
-                        <p>I enjoy developing and designing software.</p>
-                        <p>The purpose of this site is to serve as the main directory for my projects.</p>
-                        <p>Site design is definitely subject to change.</p>
-                    </div>
-                    <div class="content-wrap">
-                        <h2>Links</h2>
-                        <h3>Fundamentally Completed Projects</h3>
-                        <p>Where the sites' main functions are already implemented.</p>
-                        <p class="link-container"><a href="https://densola.github.io/browser-homepage/">My Firefox Desktop Homepage</a></p>
-                        <p class="link-container"><a href="https://densola.github.io/client-test/">Test Site for Designs and Effects</a></p>
-                        <p class="link-container"><a href="https://densola.github.io/japanese-generator/">Japanese Character Generator</a></p>
-                    </div>
-                </section>
-            </main>
-        </div>
 
-        <footer class="default-padding">
-            <p class="secondary-bg default-flex default-padding">Made by Denise.</p>
+    <body>
+        <section class="hero is-medium">
+            <div class="hero-body">
+                <div class="container">
+                    <h1 class="title is-1">Hello!</h1>
+                    <hr class="content-divider" />
+                    <h2 class="subtitle">
+                        <p>Welcome to my website.</p>
+                        <p>
+                            Here is a compilation of a few "projects" I've
+                            undertaken.
+                        </p>
+                        <br />
+                        <p>
+                            Please keep in mind that these are very old and I
+                            would like to showcase <br />
+                            better ones, but time constraints are keeping me
+                            from doing so :/
+                        </p>
+                        <p>If you don't like these colors, me neither.</p>
+                    </h2>
+                    <a
+                        href="https://github.com/densola"
+                        class="button is-light is-medium is-inverted"
+                        >Go to my GitHub&ensp;<i
+                            class="fad fa-chevron-right"
+                        ></i
+                    ></a>
+                </div>
+            </div>
+        </section>
+        <section id="parallax-1" class="hero is-large">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-6 is-offset-6">
+                            <h1 class="title is-1">Browser Homepage</h1>
+                            <hr class="content-divider" />
+                            <h2 class="subtitle">
+                                The landing page for my browser. Although I
+                                don't actively use those buttons, they still
+                                look cool.
+                            </h2>
+                            <a
+                                href="./browser-homepage/"
+                                class="button is-white is-inverted"
+                                >View&ensp;<i class="fad fa-chevron-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="parallax-2" class="hero is-large">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-6">
+                            <h1 class="title is-1">Japanese Generator</h1>
+                            <hr class="content-divider" />
+                            <h2 class="subtitle has-text-black">
+                                Generates japanese characters. Feel free to slow
+                                your browser down by entering an absurd amount
+                                of numbers.
+                            </h2>
+                            <a
+                                href="./japanese-generator/"
+                                class="button is-white is-inverted"
+                                >Try it&ensp;<i class="fad fa-chevron-right"></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="parallax-3" class="hero is-large">
+            <div class="hero-body">
+                <div class="container">
+                    <div class="columns">
+                        <div class="column is-6 is-offset-6">
+                            <h1 class="title is-1">Client Test</h1>
+                            <hr class="content-divider" />
+                            <h2 class="subtitle">
+                                This was back when I tried figuring out how to
+                                do all this stuff by myself instead of using
+                                "libraries" (AKA other people's work). <br />
+                                As you can tell, my design choices are as
+                                exquisite as wet carpet.
+                            </h2>
+                            <a
+                                href="./client-test/"
+                                class="button is-white is-inverted"
+                                >Check it out&ensp;<i
+                                    class="fad fa-chevron-right"
+                                ></i
+                            ></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="cta va">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-6">
+                        <h1 class="title is-1">That's all!</h1>
+                        <hr class="content-divider" />
+                        <h2 class="subtitle">
+                            If for some reason you want to contact me, feel free
+                            to find some way to reach me on
+                            <a
+                                class="has-text-link-light is-underlined"
+                                href="https://github.com/densola"
+                                >Github</a
+                            >.
+                            <br />
+                            I feel weird giving out my email, and the following
+                            inputs are functionally unusable.
+                        </h2>
+                    </div>
+                    <div class="column is-6">
+                        <div class="field">
+                            <label class="label">Name</label>
+                            <div class="control">
+                                <input
+                                    class="input is-medium"
+                                    type="text"
+                                    placeholder="Mary Ann"
+                                />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="field">
+                            <label class="label">Email</label>
+                            <div class="control">
+                                <input
+                                    class="input is-medium"
+                                    type="email"
+                                    placeholder="maryann@email.com"
+                                />
+                            </div>
+                        </div>
+                        <br />
+                        <div class="field is-grouped">
+                            <div class="control">
+                                <button
+                                    class="button is-white is-rounded is-outlined is-medium"
+                                >
+                                    Send
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="content has-text-centered">
+                <p>
+                    Thank you
+                    <a
+                        href="https://bulmatemplates.github.io/bulma-templates/templates/hello-parallax.html"
+                        >Bulma</a
+                    >
+                    for providing the tools which prevented me from reinventing
+                    the wheel.
+                </p>
+            </div>
         </footer>
-
-        <script src="js/events.js"></script>
     </body>
 </html>
