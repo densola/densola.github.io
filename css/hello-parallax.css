@@ -75,7 +75,7 @@ footer a {
     font-weight: 800;
     font-size: 4rem;
     font-family: "Days One", sans-serif;
-    text-shadow: 3px 1px 2px #00000028, 0px 0px 0px rgba(0, 0, 3, 0.4);
+    text-shadow: 3px 1px 2px #00000030, 0px 0px 0px rgba(0, 0, 3, 0.4);
 }
 
 .subtitle {
@@ -147,7 +147,7 @@ hr.content-divider {
 }
 
 #parallax-3 .subtitle {
-    text-shadow: 1px 1px 1px #000, 3px 3px 5px rgba(0, 0, 3, 0.4);
+    text-shadow: 1px 1px 2px #00000037, 0px 0px 0px rgba(0, 0, 3, 0.4);
 }
 
 .label {
